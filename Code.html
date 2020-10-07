@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+
+    <meta charset="utf-8" />
+    <title>Code</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="Images/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <link href="Content/styles.css" rel="stylesheet" />
+    <link href="Content/prism.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Index.html">The Code</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://jonathanportfolio.netlify.app/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Solve.html">Solve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/october464/Tacocat">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/october464/Tacocat">Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://jonathanportfolio.netlify.app/">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="mt-5">This Page Shows your JS code</h1>
+                <p class="lead">You need to use a Sytnax Highlighter - Prism.js is default</p>
+                <pre>
+<code class="language-js line-numbers">function isPalindrome() {
+    let inpuWord = document.getElementById("myPalindrome").value;
+    let reverseWord = "";
+    for (let loop = inpuWord.length - 1; loop >= 0; loop--) {
+    reverseWord += inpuWord.charAt(loop);
+    }
+    let palResult = inpuWord.split("").reverse().join("");
+if (inpuWord == reverseWord) {
+        document.getElementById("palResult").innerHTML = palResult;
+        return palResult;
+    }
+    else {
+    alert("Your word is not a palindrome");
+    }
+}
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/prism.js"></script>
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/MyCustom.js"></script>
+    <script src="Scripts/jqBootstrapValidation.js"></script>
+</body>
+</html>
